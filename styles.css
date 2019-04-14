@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --theme-color1: #06a7be;
+    --main-white: #dfeff1;
+    --main-black: #222424;
+    font-family: Arial;
+}
+
+#main-header{
+    padding: 20px 0;
+    border-bottom: 2px solid #06a7be;
+    background: #222424;
+}
+.masthead{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 12px;
+    color: var(--theme-color1);
+    font-size: calc(24px + 3vw);
+    text-shadow: 1px 1px 1px white;
+}
+.masthead::after{
+    content:"From Black Box To Open Link";
+    font-family: Cambria;
+    display: block;
+    font-size: calc(1vw + 8px);
+    text-transform: lowercase;
+    color: var(--main-white);
+    line-height: 3em;
+    font-style: italic;
+    letter-spacing: 3px;
+    text-shadow: none;
+}
+.wrapper{
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+}
