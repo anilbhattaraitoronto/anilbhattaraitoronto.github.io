@@ -19,7 +19,7 @@
     letter-spacing: 12px;
     color: var(--theme-color1);
     font-size: calc(24px + 3vw);
-    text-shadow: 1px 1px 1px white;
+    text-shadow: .5px .5px .5px #dfeff1;
 }
 .masthead::after{
     content:"From Black Box To Open Link";
