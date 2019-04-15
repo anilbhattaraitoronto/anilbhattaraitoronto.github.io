@@ -17,13 +17,13 @@
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 12px;
-    color: var(--theme-color1);
+    color:#dfeff1;
     font-size: calc(24px + 3vw);
     text-shadow: .5px .5px .5px #dfeff1;
-    animation-name: masthead;
+    /* animation-name: masthead;
     animation-duration: 2000ms;
     animation-timing-function: ease-in;
-    animation-direction: alternate;
+    animation-direction: alternate; */
     /* animation-iteration-count: infinite; */
 }
 
@@ -48,4 +48,27 @@
     width: 100%;
     max-width: 1400px;
     margin: auto;
+}
+#bio, #projects, #blogs, #contact{
+    border: 2px solid var(--main-black);
+    margin: 20px auto;
+}
+.section-title{
+    text-align: center;
+    letter-spacing: 4px;
+    padding: 20px 0;
+}
+#main-nav{
+    display: flex;
+    justify-content: center;
+}
+#main-nav > .link{
+    list-style: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.active {
+    background: var(--main-black);
+    color: var(--main-white);
 }
