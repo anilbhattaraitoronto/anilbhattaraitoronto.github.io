@@ -14,13 +14,25 @@
     background: #222424;
 }
 .masthead{
+    position: relative;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 12px;
     color: var(--theme-color1);
     font-size: calc(24px + 3vw);
     text-shadow: .5px .5px .5px #dfeff1;
+    animation-name: masthead;
+    animation-duration: 2000ms;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+    /* animation-iteration-count: infinite; */
 }
+
+@keyframes masthead {
+   from {top: -100px; transform:scale(.1); opacity: 0;}
+   to {top: 0px; transform: scale(1); opacity: 1;}
+}
+
 .masthead::after{
     content:"From Black Box To Open Link";
     font-family: Cambria;
