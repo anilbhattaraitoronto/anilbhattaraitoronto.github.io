@@ -15,29 +15,72 @@
         <h1 class="masthead">Anil Codes</h1>
     </header>
     <nav id="main-nav">
-        <li class="link" onclick="currentTab(1)">Bio</li>
-        <li class="link" onclick="currentTab(2)">Projects</li>
-        <li class="link" onclick="currentTab(3)">Blogs</li>
-        <li class="link" onclick="currentTab(4)">Contact</li>
+        <li class="link" onclick="currentProfileSection(0)">Bio</li>
+        <li class="link" onclick="currentProfileSection(1)">Projects</li>
+        <li class="link" onclick="currentProfileSection(2)">Blogs</li>
+        <li class="link" onclick="currentProfileSection(3)">Contact</li>
     </nav>
     <main class="wrapper">
         <section id="bio" class="profile-section">
             <h2 class="section-title">Infinitely Curious</h2>
+            <div id="bio-nav">
+                <li class="bio-link" onclick="currentBioSection(0)">Journey</li>
+                <li class="bio-link" onclick="currentBioSection(1)">Languages</li>
+                <li class="bio-link" onclick="currentBioSection(2)">Principles</li>
+            </div>
+            <div class="section-container">
+                <section class="bio-section">
+                    <h3 class="blog-title">Journey</h3>
+                    <p>Infinite curiosity defines my journey into coding. For long, I thought coding to be a neary magical thing. </p>
+                </section>
+                <section class="bio-section">
+                    <h3 class="blog-title">Languages</h3>
+                </section>
+                <section class="bio-section">
+                    <h3 class="blog-title">Principles</h3>
+                </section>
+                <section class="section"></section>
+                <section class="section"></section>
+            </div>
         </section>
         <section id="projects" class="profile-section">
-            <h2 class="section-title">Projects</h2>
+            <h2 class="section-title">In The Making</h2>
+            <nav id="project-nav">
+                <li class="project-link" onclick="currentProjectSection(0)">Completed</li>
+                <li class="project-link" onclick="currentProjectSection(1)">Ongoing</li>
+                <li class="project-link" onclick="currentProjectSection(2)">Future</li>
+            </nav>
+            <div class="section-container">
+               <section class="project-section">
+                   <h3 class="blog-title">Completed</h3>
+               </section>
+               <section class="project-section">
+                   <h3 class="blog-title">Ongoing</h3>
+               </section>
+               <section class="project-section">
+                   <h3 class="blog-title">Future</h3>
+               </section>
+            </div>
         </section>
         <section id="blogs" class="profile-section">
             <h2 class="section-title">Blogs</h2>
-            <div class="blog-container">
-                <section class="blog">
+            <div class="section-container">
+                <section class="section">
                     <h3 class="blog-title">No Longer A Black Box - Mostly</h3>
                     <h4 class="blog-author">Anil Bhattarai</h4>
+                    <h5 class="blog-date">April 16, 2019</h5>
                 </section>
             </div>
         </section>
         <section id="contact" class="profile-section">
             <h2 class="section-title">Contact Me</h2>
+            <div class="section-container">
+                <section class="section"></section>
+                <section class="section"></section>
+                <section class="section"></section>
+                <section class="section"></section>
+                <section class="section"></section>
+            </div>
         </section>
         
     </main>

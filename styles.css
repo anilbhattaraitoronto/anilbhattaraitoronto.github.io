@@ -13,12 +13,13 @@
     background: #222424;
 }
 .masthead{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     position: relative;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 12px;
     color:#dfeff1;
-    font-size: calc(24px + 3vw);
+    font-size: 1.8em;
     text-shadow: .5px .5px .5px #dfeff1;
     /* animation-name: masthead;
     animation-duration: 2000ms;
@@ -36,7 +37,7 @@
     content:"From Black Box To Open Link";
     font-family: Cambria;
     display: block;
-    font-size: calc(1vw + 8px);
+    font-size: .4em;
     text-transform: lowercase;
     color: var(--main-white);
     line-height: 3em;
@@ -50,25 +51,43 @@
     margin: auto;
 }
 #bio, #projects, #blogs, #contact{
-    border: 2px solid var(--main-black);
+    background: lightgray;
     margin: 20px auto;
 }
 .section-title{
     text-align: center;
     letter-spacing: 4px;
     padding: 20px 0;
+    border-bottom: 2px solid var(--main-black);
 }
-#main-nav{
+.section-container{
+    padding: 20px 0;
+}
+#main-nav, #bio-nav, #project-nav{
     display: flex;
     justify-content: center;
 }
-#main-nav > .link{
+#main-nav > .link, #bio-nav > .bio-link, #project-nav > .project-link{
     list-style: none;
     padding: 8px 16px;
     cursor: pointer;
     text-transform: uppercase;
+    font-size: .8em;
 }
 .active {
-    background: var(--main-black);
+    background: gray;
     color: var(--main-white);
+}
+
+@media only screen and (min-width:700px){
+    #main-header{
+        padding: 50px 0;
+    }
+
+    .masthead{
+        font-size: calc(16px + 2vw);
+    }
+    .masthead::after{
+        font-size: calc (1vw + 4px);
+    }
 }
