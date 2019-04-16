@@ -9,8 +9,18 @@
 }
 
 #main-header{
+    position: relative;
     padding: 20px 0;
     background: #222424;
+}
+.profile-pic{
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    object-fit: cover;
 }
 .masthead{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -21,6 +31,7 @@
     color:#dfeff1;
     font-size: 1.8em;
     text-shadow: .5px .5px .5px #dfeff1;
+    z-index: 2;
     /* animation-name: masthead;
     animation-duration: 2000ms;
     animation-timing-function: ease-in;
@@ -51,8 +62,9 @@
     margin: auto;
 }
 #bio, #projects, #blogs, #contact{
-    background: lightgray;
-    margin: 20px auto;
+    /* background: gray; */
+    margin: 30px auto;
+    padding: 20px 40px;
 }
 .section-title{
     text-align: center;
@@ -63,20 +75,35 @@
 .section-container{
     padding: 20px 0;
 }
-#main-nav, #bio-nav, #project-nav{
+#main-nav{
+    display: flex;
+    justify-content: center;
+    background: var(--main-black);
+    padding: 3px 0;
+    border-top: 1px solid var(--main-white);
+}
+#bio-nav, #project-nav{
     display: flex;
     justify-content: center;
 }
-#main-nav > .link, #bio-nav > .bio-link, #project-nav > .project-link{
+#main-nav > .link{
     list-style: none;
-    padding: 8px 16px;
+    margin: 0 16px;
     cursor: pointer;
+    color: var(--main-white);
     text-transform: uppercase;
     font-size: .8em;
 }
+#bio-nav > .bio-link, #project-nav > .project-link{
+    list-style: none;
+    margin: 8px 16px;
+    cursor: pointer;
+    color: var(--main-black);
+    text-transform: uppercase;
+    font-size: .7em;
+}
 .active {
-    background: gray;
-    color: var(--main-white);
+    border-bottom: 1px solid green;
 }
 
 @media only screen and (min-width:700px){

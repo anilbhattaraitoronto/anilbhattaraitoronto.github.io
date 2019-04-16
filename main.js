@@ -21,7 +21,6 @@ const currentProfileSection = (n) => {
 const currentBioSection = (n) => {
     showTab(n, '.bio-section', '.bio-link');
 };
-
 const currentProjectSection = (n) => {
     showTab(n, '.project-section', '.project-link')
 }
