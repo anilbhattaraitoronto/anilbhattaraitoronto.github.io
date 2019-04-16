@@ -94,7 +94,11 @@
     cursor: pointer;
     color: var(--main-white);
     text-transform: uppercase;
-    font-size: .8em;
+    font-size: .9em;
+}
+#main-nav > .link:hover{
+    background: var(--main-white);
+    color: var(--main-black);
 }
 #bio-nav > .bio-link, #project-nav > .project-link{
     list-style: none;
@@ -102,7 +106,11 @@
     cursor: pointer;
     color: var(--main-black);
     text-transform: uppercase;
-    font-size: .7em;
+    font-size: .8em;
+}
+#bio-nav > .bio-link:hover, #project-nav > .project-link:hover{
+    background: var(--main-black);
+    color: var(--main-white);
 }
 .active {
     border-bottom: 1px solid green;
