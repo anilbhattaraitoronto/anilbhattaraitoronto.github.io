@@ -19,11 +19,12 @@
     top: 0;
     width: 10vw;
     height: 10vw;
+    max-width: 200px;
+    max-height: 200px;
     border-radius: 50%;
     object-fit: cover;
 }
 .masthead{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     position: relative;
     text-align: center;
     text-transform: uppercase;
@@ -70,7 +71,7 @@
     text-align: center;
     letter-spacing: 4px;
     padding: 20px 0;
-    border-bottom: 2px solid var(--main-black);
+    /* border-bottom: 2px solid var(--main-black); */
 }
 .section-container{
     padding: 20px 0;
@@ -85,6 +86,7 @@
 #bio-nav, #project-nav{
     display: flex;
     justify-content: center;
+    border-bottom: 1px solid var(--main-black);
 }
 #main-nav > .link{
     list-style: none;
