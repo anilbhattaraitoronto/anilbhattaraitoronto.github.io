@@ -1,3 +1,11 @@
+if (navigator.serviceWorker) {
+    window.addEventListener('load', function () {
+        navigator.serviceWorker.register('/sw.js')
+        console.log('Service Worker: Registered')
+    })
+}
+
+
 /* this function takes in the */
 const showTab = (n, sectionClass, linkClass) => {
     let sections = document.querySelectorAll(sectionClass);
