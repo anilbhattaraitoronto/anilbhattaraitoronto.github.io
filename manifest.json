@@ -10,5 +10,5 @@
     "theme_color": "#020088",
     "background_color": "white",
     "display": "standalone",
-    "start_url": "/"
+    "start_url": "/index.html"
 }
