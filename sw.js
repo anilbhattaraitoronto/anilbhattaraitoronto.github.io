@@ -1,24 +1,8 @@
 const cacheName = 'v1'
-const filesToCache = [
-    '/index.html',
-    '/main.js',
-    '/styles.css',
-    '/images/profile_pic.jpg'
-]
+
 
 self.addEventListener('install', function (event) {
     console.log('Service Worker: Installed')
-    event.waitUntil(
-        caches
-            .open(cacheName)
-            .then(function (cache) {
-                console.log('Service Worker: Caching Files')
-                cache.addAll(filesToCache)
-            })
-            .then(function () {
-                self.skipWaiting()
-            })
-    )
 })
 
 self.addEventListener('activate', function (event) {
@@ -43,8 +27,21 @@ self.addEventListener('activate', function (event) {
 self.addEventListener('fetch', function (event) {
     console.log('Service Worker: Fetching')
     event.respondWith(
-        fetch(event.request).catch(function () {
-            caches.match(event.request)
-        })
+        fetch(event.request)
+            .then(function (res) {
+                //clone the response
+                const resClone = res.clone()
+                //open cache
+                caches.open(cacheName)
+                    .then(function (cache) {
+                        //add response to cache
+                        cache.put(event.request, resClone)
+                    })
+                return res;
+            }).catch(function (err) {
+                caches.match(event.request).then(function (res) {
+                    return res
+                })
+            })
     )
 })
