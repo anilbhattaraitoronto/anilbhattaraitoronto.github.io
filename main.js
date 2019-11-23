@@ -1,6 +1,6 @@
 if (navigator.serviceWorker) {
     window.addEventListener('load', function () {
-        navigator.serviceWorker.register('/sw.js')
+        navigator.serviceWorker.register('./sw.js')
         console.log('Service Worker: Registered')
     })
 }
