@@ -2,92 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="description" content="A personal page for Anil Bhattarai's development projects on javascript, react, vue, django, python, and general webdevelopment"/>
-    <meta name="keywords" content="nepali, language, software, webapp, website, javascript, reactjs, python, django, vuejs, vanilla javascript"/>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="manifest" href="manifest.json">
-    <title>Anil Bhattarai's Github Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="javascript, python, django, react, styling, html, web development, web programming, anil bhattarai, programming, responsive design" >
+    <meta name="description" content="Anil Bhattarai's github profile page demonstrating various software/web development projects, design philosophies and random thoughts" >
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Anil Bhattarai</title>
 </head>
 <body>
-  <section class="app-wrapper">
-    <header id="main-header">
-        <h1 class="masthead">Anil Codes</h1>
-        <!-- <img src="anilcodes/images/profile_pic1.jpg" alt="" class="profile-pic"> -->
+    <header class="main-header">
+        <nav id="contact-nav">
+            <a href="tel:+14168570496" class="contact-link"><span>Call</span>: 1(416) 857 0496</a>
+            <a href="mailto:anilbhattarai@gmail.com" class="contact-link"> <span>Write</span>: anilbhattarai@gmail.com</a>
+            <a href="https://anilbhattaraitoronto.github.io" class="contact-link"><span>Read</span>: anilbhattaraitoronto.github.io</a>
+        </nav>
+        <h1 id="masthead" title="Anil Codes">Anil Codes</h1>
+        <nav id="main-nav" title="Main Navigation">
+            <a class="main-link">Projects</a>
+            <a class="main-link">Blogs</a>
+        </nav>
     </header>
-    <nav id="main-nav">
-        <li class="link" onclick="currentProfileSection(0)">Bio</li>
-        <li class="link" onclick="currentProfileSection(1)">Projects</li>
-        <li class="link" onclick="currentProfileSection(2)">Blogs</li>
-        <li class="link" onclick="currentProfileSection(3)">Contact</li>
-    </nav>
-    <main class="wrapper">
-        <section id="bio" class="profile-section">
-            <h2 class="section-title">Infinitely Curious</h2>
-            <nav id="bio-nav">
-                <li class="bio-link" onclick="currentBioSection(0)">Journey</li>
-                <li class="bio-link" onclick="currentBioSection(1)">Languages</li>
-                <li class="bio-link" onclick="currentBioSection(2)">Principles</li>
-            </nav>
-            <div class="section-container">
-                <section class="bio-section">
-                    <h3 class="blog-title">Journey</h3>
-                    <p>Infinite curiosity defines my journey into coding. For long, I thought coding to be a neary magical thing. </p>
-                </section>
-                <section class="bio-section">
-                    <h3 class="blog-title">Languages</h3>
-                </section>
-                <section class="bio-section">
-                    <h3 class="blog-title">Principles</h3>
-                </section>
-                <section class="section"></section>
-                <section class="section"></section>
-            </div>
-        </section>
-        <section id="projects" class="profile-section">
-            <h2 class="section-title">In The Making</h2>
-            <nav id="project-nav">
-                <li class="project-link" onclick="currentProjectSection(0)">Completed</li>
-                <li class="project-link" onclick="currentProjectSection(1)">Ongoing</li>
-                <li class="project-link" onclick="currentProjectSection(2)">Future</li>
-            </nav>
-            <div class="section-container">
-               <section class="project-section">
-                   <h3 class="blog-title">Completed</h3>
-               </section>
-               <section class="project-section">
-                   <h3 class="blog-title">Ongoing</h3>
-               </section>
-               <section class="project-section">
-                   <h3 class="blog-title">Future</h3>
-               </section>
-            </div>
-        </section>
-        <section id="blogs" class="profile-section">
-            <h2 class="section-title">Blogs</h2>
-            <div class="section-container">
-                <section class="section">
-                    <h3 class="blog-title">No Longer A Black Box - Mostly</h3>
-                    <h4 class="blog-author">Anil Bhattarai</h4>
-                    <h5 class="blog-date">April 16, 2019</h5>
-                </section>
-            </div>
-        </section>
-        <section id="contact" class="profile-section">
-            <h2 class="section-title">Contact Me</h2>
-            <div class="section-container">
-                <section class="section"></section>
-                <section class="section"></section>
-                <section class="section"></section>
-                <section class="section"></section>
-                <section class="section"></section>
-            </div>
-        </section>
-        
-    </main>
-</section>
-    
-    <script src="main.js"></script>
+    <main class="app-root"></main>
+    <footer class="app-footer">
+        <section class="footer-section" id="footer-about">About This Page</section>
+        <section class="footer-section" id="footer-bio">My Bio</section>
+    </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>

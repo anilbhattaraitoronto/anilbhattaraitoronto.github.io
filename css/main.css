@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    --themeColorBlue: rgb(14, 93, 212);
+    --themeColorOrange: rgb(185, 125, 13);
+    font-family: Arial;
+}
+body{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px;
+}
+#contact-nav{
+    text-align: right;
+    font-size: 14px;
+}
+#contact-nav a{
+    display: inline-block;
+    padding: 0 8px;
+    text-decoration: none;
+}
+#contact-nav a span{
+    color: var(--themeColorBlue);
+}
